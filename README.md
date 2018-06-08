@@ -1,17 +1,20 @@
 <h2>Android车牌识别 </h2>
 <h3> 一、下载</h3>
-<h5> 1.tess-two源码  </h5>
+<h5> 1.tess-two源码  </h5>  
 [下载链接](https://github.com/gaojulong/tess-two)   
-<h5>2.tessdata语言数据文件  </h5>
+<h5>2.tessdata语言数据文件  </h5>  
 [下载链接](https://github.com/tesseract-ocr/tessdata)   
 咱们需要的只是识别车牌，所以英文的语言数据eng.traineddata就够了。  
 
 ![image.png](https://upload-images.jianshu.io/upload_images/6540285-17f88187f0962173.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
 
 <h3> 二、ndk编译tess-two</h3>
- 1.下载好tess-two源文件后，终端进入tess-two文件夹
+ 1.下载好tess-two源文件后，终端进入tess-two文件夹  
+ 
 ![image.png](https://upload-images.jianshu.io/upload_images/6540285-22497920dd29be16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
-  2.编译生成.so文件，过程可能有点慢大概20分钟,如果没有安装ndk请参考这里 [<查看MacOS ndk配置>](https://www.jianshu.com/p/fecbf2204046)
+
+  2.编译生成.so文件，过程可能有点慢大概20分钟,如果没有安装ndk请参考这里   
+  [<查看MacOS ndk配置>](https://www.jianshu.com/p/fecbf2204046)
   
   	ndk-build    
   	
@@ -25,8 +28,9 @@
  
  ![image.png](https://upload-images.jianshu.io/upload_images/6540285-1e3ee0cdf8bb4d73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
  2.找到源文件tess-two里src文件里的com文件，复制到项目里
- 
- ![image.png](https://upload-images.jianshu.io/upload_images/6540285-0a445cf52c1becd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+  
+ ![image.png](https://upload-images.jianshu.io/upload_images/6540285-0a445cf52c1becd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   
  3.代码其实很简单，如果只用于车牌识别有一个技巧，就是设置白名单和黑名单   
 
 	TessBaseAPI baseApi = new TessBaseAPI();  
@@ -55,7 +59,8 @@
  
  <h3> 四、把训练语言数据放入到根目录</h3>
  1.在根目录下创建一个文件夹名字必须为tessdata(必须根目录和tessdata命名)  
- 2.把 eng.traineddata放入tessdata里
+ 2.把 eng.traineddata放入tessdata里  
+ 
  ![image.png](https://upload-images.jianshu.io/upload_images/6540285-f7be91590966b9b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
  
  <h4>    
