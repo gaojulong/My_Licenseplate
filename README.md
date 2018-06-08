@@ -68,11 +68,8 @@
  
  ![image.png](https://upload-images.jianshu.io/upload_images/6540285-f7be91590966b9b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
  
- <h4>    
- 总结： 
- 介绍的可能有点粗糙，源码放在了github上，有不清楚的地方可以留言，此项目对于生活中车牌识别成功率很低，后边文章会介绍和OpenCV一起使用。先用OpenCV处理二值化后再进行识别！
- 
- </h4>
+ <h4> 总结:</h4>
+ 此项目对于生活中车牌识别成功率很低，后边文章会介绍和OpenCV一起使用。先用OpenCV处理二值化后再进行识别！
 
  
 
