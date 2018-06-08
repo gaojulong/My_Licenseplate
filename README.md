@@ -62,7 +62,8 @@
  
  
  <h3> 四、把训练语言数据放入到根目录</h3>
- 1.在根目录下创建一个文件夹名字必须为tessdata(必须根目录和tessdata命名)      
+ 1.在根目录下创建一个文件夹名字必须为tessdata(必须根目录和tessdata命名)  
+       
  2.把 eng.traineddata放入tessdata里  
  
  ![image.png](https://upload-images.jianshu.io/upload_images/6540285-f7be91590966b9b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
